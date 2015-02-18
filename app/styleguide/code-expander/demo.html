@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code Expander</title>
+
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="../layout/demo.css">
+
+  <link href="//fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <button class="wsk-button wsk-js-button wsk-button--fab wsk-button--colored wsk-js-ripple-effect wsk-code-expander wsk-js-code-expander">♥</button>
+
+  <div class="demo-container code-expander">
+    <div class="wsk-layout wsk-js-layout wsk-layout--overlay-drawer-button">
+      <div class="wsk-layout__header">
+        <!-- Icon -->
+        <img class="wsk-layout-icon" src="images/app-icon.png"/>
+        <!-- Title -->
+        <span class="wsk-layout-title">Web Starter Kit</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="wsk-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="wsk-navigation">
+          <a class="wsk-navigation__link" href="">Hello</a>
+          <a class="wsk-navigation__link" href="">World.</a>
+          <a class="wsk-navigation__link" href="">How</a>
+          <a class="wsk-navigation__link" href="">Are</a>
+          <a class="wsk-navigation__link" href="">You?</a>
+        </nav>
+      </div>
+      <div class="wsk-layout__drawer">
+        <span class="wsk-layout-title">Web Starter Kit</span>
+        <nav class="wsk-navigation">
+          <a class="wsk-navigation__link" href="">Hello</a>
+          <a class="wsk-navigation__link" href="">World.</a>
+          <a class="wsk-navigation__link" href="">How</a>
+          <a class="wsk-navigation__link" href="">Are</a>
+          <a class="wsk-navigation__link" href="">You?</a>
+        </nav>
+      </div>
+      <div class="wsk-layout__content">
+        <div class="demo-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Scrolling header</h3>
+  <p>Same as the standard layout, but the header scrolls with the content.</p>
+
+  <div class="demo-container code-expander">
+    <div class="wsk-layout wsk-js-layout wsk-layout--overlay-drawer-button">
+      <div class="wsk-layout__header wsk-layout__header--scroll">
+        <!-- Icon -->
+        <img class="wsk-layout-icon" src="images/app-icon.png"/>
+        <!-- Title -->
+        <span class="wsk-layout-title">Web Starter Kit</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="wsk-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="wsk-navigation">
+          <a class="wsk-navigation__link" href="">Hello</a>
+          <a class="wsk-navigation__link" href="">World.</a>
+          <a class="wsk-navigation__link" href="">How</a>
+          <a class="wsk-navigation__link" href="">Are</a>
+          <a class="wsk-navigation__link" href="">You?</a>
+        </nav>
+      </div>
+      <div class="wsk-layout__drawer">
+        <span class="wsk-layout-title">Web Starter Kit</span>
+        <nav class="wsk-navigation">
+          <a class="wsk-navigation__link" href="">Hello</a>
+          <a class="wsk-navigation__link" href="">World.</a>
+          <a class="wsk-navigation__link" href="">How</a>
+          <a class="wsk-navigation__link" href="">Are</a>
+          <a class="wsk-navigation__link" href="">You?</a>
+        </nav>
+      </div>
+      <div class="wsk-layout__content">
+        <div class="demo-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Fixed drawer with header</h3>
+  <p>The drawer is always open in large screen sizes, functioning as side
+    navigation.</p>
+
+  <div class="demo-container code-expander">
+    <div class="wsk-layout wsk-js-layout wsk-layout--fixed-drawer wsk-layout--overlay-drawer-button">
+      <div class="wsk-layout__header">
+        <span class="wsk-layout-title">Fixed drawer layout demo</span>
+        <div class="wsk-layout-spacer"></div>
+        <div class="wsk-input wsk-input--right">
+          <label class="wsk-textfield-expandable-icon wsk-label" for="sample-expandable">
+            <span class="wsk-textfield-expandable-icon-search"></span>
+          </label>
+          <div class="wsk-input__expandable-holder">
+            <input class="wsk-textfield wsk-js-textfield wsk-textfield--expandable" type="text" name="sample" id="sample-expandable" />
+            <label class="wsk-label" for="sample"></label>
+          </div>
+        </div>
+      </div>
+      <div class="wsk-layout__drawer">
+        <span class="wsk-layout-title">Web Starter Kit</span>
+        <nav class="wsk-navigation">
+          <a class="wsk-navigation__link" href="">Hello</a>
+          <a class="wsk-navigation__link" href="">World.</a>
+          <a class="wsk-navigation__link" href="">How</a>
+          <a class="wsk-navigation__link" href="">Are</a>
+          <a class="wsk-navigation__link" href="">You?</a>
+        </nav>
+      </div>
+      <div class="wsk-layout__content">
+        <div class="demo-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- build:js(app/styleguide/code-expander/) ../../scripts/main.min.js -->
+  <script src="../wskComponentHandler.js"></script>
+  <script src="../layout/layout.js"></script>
+  <script src="code-expander.js"></script>
+  <script src="../button/button.js"></script>
+  <script src="../ripple/ripple.js"></script>
+  <script src="../third_party/prism/prism.js" data-manual></script>
+  <script src="../third_party/rAF.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
